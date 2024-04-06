@@ -1,0 +1,98 @@
+.main-container{
+    background-color: antiquewhite;
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.sidebar-container{
+    width: 30vw;
+    border: 5px double red;
+}
+
+.workarea-container{
+    width: 70vw;
+    border: 5px double blue;
+}
+
+
+.welcome-logo{
+    height: 20vh;
+}
+
+
+.welcome-container{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: rgba(0,0,0,0.54);
+    border-bottom: 5px solid #63d7b0;
+    border-radius: 20px;
+}
+
+.search-box{
+    border: none;
+    width: 50%;
+    height: 5vh;
+    font-size: 20px;
+}
+
+.search-box:focus{
+    outline: none;
+}
+
+.creategroup-container{
+    width: 70vw;
+    align-self: center;
+    padding: 20px 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-container{
+    background-color: aliceblue;
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.image-container{
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(251, 242, 242);
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.login-text{
+    font-size: 30px;
+    color: darkcyan;
+    margin-bottom: 20px;
+}
+
+.list-container{
+    flex: 0.7;
+}
