@@ -18,58 +18,63 @@ function Users_Groups(){
             </IconButton>
             <input type="text" placeholder="Search" />
         </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
+
+        <div className="ug-list">
+
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
+            <div className="list-item">
+                <p className="con-icon">T</p>
+                <p className="con-title">Test User</p>
+            </div>
         </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
-        <div className="list-item">
-            <p className="con-icon">T</p>
-            <p className="con-title">Test User</p>
-        </div>
+        
     </div>
     );
 }
