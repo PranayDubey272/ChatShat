@@ -48,7 +48,7 @@
 
 .creategroup-container{
     width: 70vw;
-    align-self: center;
+    align-self: flex-start;
     padding: 20px 10px;
     margin: 10px;
     background-color: white;

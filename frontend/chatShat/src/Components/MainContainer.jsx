@@ -12,8 +12,8 @@ function MainContainer(){
     return <div className="main-container">
         {/* <Login/> */}
         <SideBar/>
-        <Users_Groups/>
-        {/* <CreateGroups/> */}
+        {/* <Users_Groups/> */}
+        <CreateGroups/>
         {/* <Welcome/> */}
         {/* <WorkArea/> */}
     </div>;
