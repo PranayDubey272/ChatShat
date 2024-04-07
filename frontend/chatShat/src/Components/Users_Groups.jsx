@@ -2,12 +2,14 @@ import React from "react";
 import "./myStyle.css";
 import SearchIcon from "@mui/icons-material/Search";
 import { IconButton } from "@mui/material";
+import logo from "../images/logo.png";
 
 function Users_Groups(){
     return (
     <div className="list-container">
         <div className="ug-header">
-            <img src="logo" alt="logo" style={{height: "2rem", width: "2rem"}}/>
+            <img src={logo} alt="logo" style={{height: "3rem",
+            width: "5rem", marginLeft: "10px"}}/>
             <p className="ug-title">Online Users</p>
         </div>
         <div className="sb-search">
@@ -68,7 +70,6 @@ function Users_Groups(){
             <p className="con-icon">T</p>
             <p className="con-title">Test User</p>
         </div>
-        Users and Groups
     </div>
     );
 }
