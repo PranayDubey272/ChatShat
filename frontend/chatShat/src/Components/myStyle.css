@@ -94,5 +94,54 @@
 }
 
 .list-container{
-    flex: 0.7;
+    width: 70vw;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.ug-header{
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.ug-title{
+    color: rgba(0, 0, 0, 0.54);
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.ug-list{
+    flex: 1;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding: 10px;
+}
+
+.ug-list::-webkit-scrollbar{
+    display: none;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin: 10px;
+    transition-duration: 0.5s;
+}
+
+.list-item:hover{
+    background-color: rgb(226,226,226);
+}
+
+.list-item:active{
+    background-color: white;
 }
