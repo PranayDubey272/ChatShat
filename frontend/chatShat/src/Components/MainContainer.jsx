@@ -2,27 +2,12 @@ import React,{useState} from "react";
 import './myStyles.css';
 import Sidebar from "./Sidebar";
 import ChatArea from "./ChatArea";
-import Users_Group from "./Users_Groups";
+import Users_Group from "./Users";
 import Welcome from "./Welcome";
 import CreateGroup from "./CreateGroups"
+import {Outlet} from "react-router-dom";
 function MainContainer(){
-  const [conversations,setConversation]=useState([
-    {
-      name:"Test#1",
-      lastMessage:"Last Message #1",
-      timeStamp:"today",
-    },
-    {
-      name:"Test#2",
-      lastMessage:"Last Message #2",
-      timeStamp:"today",
-    },
-    {
-      name:"Test#3",
-      lastMessage:"Last Message #3",
-      timeStamp:"today",
-    },
-  ]);
+
  return (
  <div className="main-container">
  <div className="header">
@@ -32,10 +17,11 @@ function MainContainer(){
  </div>
  <div className="mainwork-container">
  <Sidebar/>
+ <Outlet/>
  {/* <CreateGroup/> */}
  {/* <Welcome/> */}
  {/* <Users_Group/> */}
- <ChatArea props={conversations[0]}/>
+ {/* <ChatArea props={conversations[0]}/> */}
   
  </div>
  

@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import './Navigation.css';
-import { IoIosArrowBack } from "react-icons/io";
+import { MdGroupAdd } from "react-icons/md";
+import { IoIosAddCircle } from "react-icons/io";
+import { IoPersonCircleSharp } from "react-icons/io5";
 import { PiDotsThreeOutlineVerticalDuotone } from "react-icons/pi";
+import { MdNightlight } from "react-icons/md";
+import { IoPersonAddSharp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { MdMessage } from "react-icons/md";
-import { FaUserCircle } from "react-icons/fa"; 
+
 
 function Navigation() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -19,27 +23,27 @@ function Navigation() {
         <ul>
           <li className={`list ${activeIndex === 0 ? 'active' : ''}`} onMouseEnter={() => handleHover(0)}>
             <a href="#">
-              <span className="icon"> <IoIosArrowBack /></span> {/* Arrow back icon */}
+              <span className="icon"><IoPersonCircleSharp/> </span> {/* Arrow back icon */}
             </a>
           </li>
           <li className={`list ${activeIndex === 1 ? 'active' : ''}`} onMouseEnter={() => handleHover(1)}>
-            <a href="#">
-              <span className="icon"> <FaUserCircle /></span> {/* Profile icon */}
+            <a href="/app/user">
+              <span className="icon"><IoPersonAddSharp/></span> {/* Profile icon */}
             </a>
           </li>
           <li className={`list ${activeIndex === 2 ? 'active' : ''}`} onMouseEnter={() => handleHover(2)}>
-            <a href="#">
-              <span className="icon"><MdMessage /></span>
+            <a href="/app/groups">
+              <span className="icon"><MdGroupAdd /></span>
             </a>
           </li>
           <li className={`list ${activeIndex === 3 ? 'active' : ''}`} onMouseEnter={() => handleHover(3)}>
-            <a href="#">
-              <span className="icon"><IoCall /></span>
+            <a href="/app/create-groups">
+              <span className="icon"><IoIosAddCircle /></span>
             </a>
           </li>
           <li className={`list ${activeIndex === 4 ? 'active' : ''}`} onMouseEnter={() => handleHover(4)}>
             <a href="#">
-              <span className="icon"><PiDotsThreeOutlineVerticalDuotone />
+              <span className="icon"><MdNightlight />
               </span>
             </a>
           </li>

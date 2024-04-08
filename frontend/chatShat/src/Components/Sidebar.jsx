@@ -7,6 +7,7 @@ import ConversationItem from './ConversationItem';
 import "./myStyles.css";
 
 function Sidebar() {
+
   const [conversations,setConversation]=useState([
     {
       name:"Test#1",
@@ -36,7 +37,7 @@ function Sidebar() {
       <div className="sb-conversation">
         {
           conversations.map((conversation)=>{
-            return <ConversationItem props={conversation} key={conversation.name}/>
+            return <ConversationItem props={conversation} key={conversation.name} />
             
           })
         }
