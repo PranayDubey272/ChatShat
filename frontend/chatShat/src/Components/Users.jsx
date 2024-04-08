@@ -1,10 +1,10 @@
 import React from "react";
-import "./myStyle.css";
+import "./myStyles.css";
 import SearchIcon from "@mui/icons-material/Search";
 import { IconButton } from "@mui/material";
-import logo from "../images/logo.png";
+import logo from "/logo.png";
 
-function Users_Groups(){
+function Users(){
     return (
     <div className="list-container">
         <div className="ug-header">
@@ -16,7 +16,7 @@ function Users_Groups(){
             <IconButton>
                 <SearchIcon/>
             </IconButton>
-            <input type="text" placeholder="Search" />
+            <input type="text" placeholder="Search" className="search-box" />
         </div>
 
         <div className="ug-list">
@@ -79,4 +79,4 @@ function Users_Groups(){
     );
 }
 
-export default Users_Groups;
+export default Users;
