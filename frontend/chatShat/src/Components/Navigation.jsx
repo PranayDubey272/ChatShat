@@ -7,11 +7,16 @@ import { MdNightlight } from "react-icons/md";
 import { IoSunnySharp } from "react-icons/io5";
 import { IoPersonAddSharp } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleTheme } from '../Features/themeSlice';
 
 function Navigation() {
   const navigate = useNavigate();
-  const[lightTheme, setLightTheme] = useState(true);
+  const dispatch = useDispatch();
+  const lightTheme = useSelector((state) => state.themeKey);
+
+
+
 
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -45,13 +50,10 @@ function Navigation() {
           </li>
           <li className={`list ${activeIndex === 4 ? 'active' : ''}`} onMouseEnter={() => handleHover(4)}>
             <a href="#" onClick={() => {
-              setLightTheme((preValue) => {
-                return !preValue;
-              })
+              dispatch(toggleTheme());
             }}>
               <span className={"icon" + (lightTheme ? "" : " dark")}> 
-              {lightTheme && <MdNightlight/>}
-              {!lightTheme && <IoSunnySharp/>}
+              {lightTheme ? <MdNightlight/> : <IoSunnySharp/>}
               </span>
             </a>
           </li>
