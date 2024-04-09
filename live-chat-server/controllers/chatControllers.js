@@ -104,6 +104,25 @@ const createGroupChat = asyncHandler(async (req,res)=>{
     });
 
 
+const groupExit = asyncHandler(async (req,res)=>{
+  const {chatId, userId } = req.body;
+  // check if the requester is admin
+
+  //login is yet to be made
+  const removed = await Chat.findByIdAndUpdate(
+
+  ).populate("users", "-password")
+  .populate("groupAdmin","-password");
+  if(!removed){
+    res.status(400).send({message:"something went wrong"});
+  }
+  else{
+    res.json(removed);
+  }
+});
+
+
+
 module.exports ={
     accessChat,
     fetchChats,
