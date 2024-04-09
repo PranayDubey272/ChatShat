@@ -65,12 +65,13 @@ const fetchChats = asyncHandler(async (req,res)=>()=>{
     }
 });
 
-
-
-module.exports ={
-    accessChat,
-    fetchChats,
-    fetchGroups,
-    createGroupChat,
-    groupExit,
-}
+const fetchGroups = asyncHandler(async (req,res)=>{
+  try{
+    const allGroups = await Chat.where("isGroupChat").equals(true);
+    res.status(200).send(allGroups);
+  }
+  catch(error){
+    res.status(400);
+    throw new Error(error.message);
+  }
+});
