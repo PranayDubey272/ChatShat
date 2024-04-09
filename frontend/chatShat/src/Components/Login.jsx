@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/logo.png";
+import logo from "/logo.png";
 import { Button, TextField } from "@mui/material";
 
 function Login(){

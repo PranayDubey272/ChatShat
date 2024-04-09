@@ -1,3 +1,8 @@
+.dark{
+  background-color: #2d3941 !important;
+  color: whitesmoke !important;
+}
+
 .main-container{
   height: 90vh;
   width: 90vw;
@@ -80,6 +85,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition-duration: 0.5s;
+  background-color: white;
 }
 .conversations-container{
   display: grid;
