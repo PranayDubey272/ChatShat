@@ -1,6 +1,5 @@
 const mongoose  = require('mongoose');
-const bcrypt = require("bcryptjs");
-const chatModel =  mongoose.Schema({{
+const chatModel =  mongoose.Schema({
     chatName : {type: 'string'},
     isGroupChat : {type: 'boolean'},
     users : [
@@ -17,6 +16,8 @@ const chatModel =  mongoose.Schema({{
         type: mongoose.Schema.Types.ObjectId,
         ref :'User'
     },
+},{
+    timeStamp:true,
 });
 
 const Chat = mongoose.model("Chat",chatModel);
