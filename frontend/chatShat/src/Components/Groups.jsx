@@ -15,7 +15,7 @@ function Groups(){
             width: "5rem", marginLeft: "10px"}}/>
             <p className="ug-title">Available Groups</p>
         </div>
-        <div className="sb-search">
+        <div className={"sb-search" + (lightTheme ? "" : " dark")}>
             <IconButton>
                 <SearchIcon/>
             </IconButton>
@@ -24,57 +24,58 @@ function Groups(){
 
         <div className="ug-list">
 
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
+            <div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
             </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
-            </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
-            </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
-            </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
-            </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
-            </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
-            </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
-            </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
-            </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
-            </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
-            </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
-            </div>
-            <div className="list-item">
-                <p className="con-icon">T</p>
-                <p className="con-title">Test User</p>
+            <div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
+            </div><div className={"list-item" + (lightTheme ? "" : " dark")}>
+                <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
+                <p className={"con-title" + (lightTheme ? "" : " dark")}>Test User</p>
             </div>
         </div>
         
