@@ -267,7 +267,17 @@ border-radius: 20px;
   color: darkcyan;
   margin-bottom: 20px;
 }
-
+.to-log{
+  font-size: 20px;
+  color: darkcyan;
+  margin-bottom: 20px;
+  
+}
+.link-log{
+  margin-left: 10px;
+  text-decoration: none;
+  color: blue;
+}
 .list-container{
   /* width: 70vw; */
   flex: 0.7;
