@@ -1,5 +1,4 @@
 import React from "react";
-import "./myStyles.css";
 import {IconButton} from "@mui/material";
 import DoneOutlineIcon from '@mui/icons-material/DoneOutline';
 import { useSelector } from "react-redux";
