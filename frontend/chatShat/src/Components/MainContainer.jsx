@@ -6,7 +6,10 @@ import Users_Group from "./Users";
 import Welcome from "./Welcome";
 import CreateGroup from "./CreateGroups"
 import {Outlet} from "react-router-dom";
+import { useSelector } from "react-redux";
 function MainContainer(){
+
+    const lightTheme = useSelector((state) => state.themeKey);
 
  return (
  <div className="main-container">
@@ -15,7 +18,7 @@ function MainContainer(){
   <img src="/logow.png" alt="chat-icon" className="head-img"/>
   </div>
  </div>
- <div className="mainwork-container">
+ <div className={"mainwork-container" + (lightTheme ? "" : " dark")}>
  <Sidebar/>
  <Outlet/>
  {/* <CreateGroup/> */}
