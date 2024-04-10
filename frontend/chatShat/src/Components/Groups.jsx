@@ -13,13 +13,13 @@ function Groups(){
         <div className={"ug-header" + (lightTheme ? "" : " dark")}>
             <img src={logo} alt="logo" style={{height: "3rem",
             width: "5rem", marginLeft: "10px"}}/>
-            <p className="ug-title">Available Groups</p>
+            <p className={"ug-title" + (lightTheme ? "" : " dark")}>Available Groups</p>
         </div>
         <div className={"sb-search" + (lightTheme ? "" : " dark")}>
             <IconButton>
                 <SearchIcon/>
             </IconButton>
-            <input type="text" placeholder="Search" className="search-box" />
+            <input type="text" placeholder="Search" className={"search-box" + (lightTheme ? "" : " dark")} />
         </div>
 
         <div className="ug-list">
