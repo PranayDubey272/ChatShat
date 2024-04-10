@@ -7,10 +7,11 @@
     display: flex;
     align-items: center;
     border-radius: 20px;
+    margin-bottom: 10px;
     border-top: 1px solid rgba(0, 0, 0, 0.14);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
-  
+
   .navigation ul {
     display: flex;
     width: 350px;
@@ -24,7 +25,7 @@
     width: 70px;
     height: 70px;
     z-index: 1;
-    margin-left: 45px;
+    margin-left: 38px;
   }
   
   .navigation ul li button {
@@ -103,12 +104,12 @@
   
   .navigation ul li:nth-child(1).active ~ .indicator {
     transform: translateX(calc(70px * 0));
-    left: 40px;
+    left: 36px;
   }
   
   .navigation ul li:nth-child(2).active ~ .indicator {
     transform: translateX(calc(70px * 1));
-    left: 48px;
+    left: 50px;
   }
   
   .navigation ul li:nth-child(3).active ~ .indicator {
@@ -118,11 +119,11 @@
   
   .navigation ul li:nth-child(4).active ~ .indicator {
     transform: translateX(calc(80px * 3));
-    left: 67px;
+    left: 75px;
   }
   
   .navigation ul li:nth-child(5).active ~ .indicator {
     transform: translateX(calc(66px * 4));
-   left: 78px;
+   left: 90px;
   }
   
