@@ -1,10 +1,16 @@
 import React from "react";
+import "./myStyles.css";
 import {IconButton} from "@mui/material";
 import DoneOutlineIcon from '@mui/icons-material/DoneOutline';
+import { useSelector } from "react-redux";
 
 function CreateGroups(){
-    return (<div className="creategroup-container">
-            <input type="text" placeholder="Enter Group Name" className="search-box" />
+
+    const lightTheme = useSelector((state) => state.themeKey);
+
+    return (
+        <div className={"creategroup-container" + (lightTheme ? "" : " dark")}>
+            <input type="text" placeholder="Enter Group Name" className={"search-box" + (lightTheme ? "" : " dark")} />
             <IconButton>
                 <DoneOutlineIcon />
             </IconButton>

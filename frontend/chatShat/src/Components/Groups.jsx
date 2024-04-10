@@ -9,7 +9,7 @@ function Groups(){
     const lightTheme = useSelector((state) => state.themeKey);
 
     return (
-    <div className="list-container">
+    <div className={"list-container" + (lightTheme ? "" : " dark")}>
         <div className={"ug-header" + (lightTheme ? "" : " dark")}>
             <img src={logo} alt="logo" style={{height: "3rem",
             width: "5rem", marginLeft: "10px"}}/>
