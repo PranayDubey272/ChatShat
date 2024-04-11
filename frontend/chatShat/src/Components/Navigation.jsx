@@ -23,22 +23,27 @@ function Navigation() {
         <ul>
           <li className={`list ${activeIndex === 0 ? 'active' : ''}`} onMouseEnter={() => handleHover(0)}>
             <button onClick={() => handleNavigation("/")}>
+              <span className="icon"><IoPersonCircleSharp /></span>
             </button>
           </li>
           <li className={`list ${activeIndex === 1 ? 'active' : ''}`} onMouseEnter={() => handleHover(1)}>
             <button onClick={() => handleNavigation("/app/user")}>
+              <span className="icon"><IoPersonAddSharp /></span>
             </button>
           </li>
           <li className={`list ${activeIndex === 2 ? 'active' : ''}`} onMouseEnter={() => handleHover(2)}>
             <button onClick={() => handleNavigation("/app/groups")}>
+              <span className="icon"><MdGroupAdd /></span>
             </button>
           </li>
           <li className={`list ${activeIndex === 3 ? 'active' : ''}`} onMouseEnter={() => handleHover(3)}>
             <button onClick={() => handleNavigation("/app/create-groups")}>
+              <span className="icon"><IoIosAddCircle /></span>
             </button>
           </li>
           <li className={`list ${activeIndex === 4 ? 'active' : ''}`} onMouseEnter={() => handleHover(4)}>
             <button onClick={() => handleNavigation("#")}>
+              <span className="icon"><MdNightlight /></span>
             </button>
           </li>
 
