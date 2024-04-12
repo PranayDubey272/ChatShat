@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "/logo.png";
+import lightLogo from "/logo.png";
+import darkLogo from "/logow.png";
 import { useSelector } from "react-redux";
 
 function Welcome(){
@@ -8,7 +9,7 @@ function Welcome(){
 
     return (
     <div className={"welcome-container" + (lightTheme ? "" : " dark")}>
-        <img src={logo} alt="Logo" className={"welcome-logo" + (lightTheme ? "" : " dark")} />
+        <img src={lightTheme ? lightLogo : darkLogo} alt="Logo" className={"welcome-logo" + (lightTheme ? "" : " dark")} />
         <p>Come and chat with us HABIBI</p>
         
     </div>);
