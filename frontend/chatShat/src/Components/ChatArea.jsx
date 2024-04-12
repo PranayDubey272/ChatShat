@@ -76,7 +76,9 @@ function ChatArea() {
         />
       </IconButton>        
       <input placeholder='Type a Message' className={'search-box' + (lightTheme ? "" : " dark")}/>
+      <IconButton className={"" + (lightTheme ? "" : "dark")}>
       <SendIcon/>
+      </IconButton>
 </div>
     </div>
   );

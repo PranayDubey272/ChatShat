@@ -1,7 +1,7 @@
 .navigation {
   margin-left: 7px;
     position: relative;
-    max-width: 96%;
+    max-width: 97%;
     height: 70px;
     background: #ffffff;
     display: flex;
@@ -32,7 +32,7 @@
     display: flex;
     width: 350px;
     justify-content: space-around;
-    padding-left: 10px;
+    padding-left: 0px;
   }
   
   .navigation ul li {
@@ -41,7 +41,7 @@
     width: 70px;
     height: 70px;
     z-index: 1;
-    margin-left: 38px;
+    margin-left: 2px;
   }
   
   .navigation ul li button {
@@ -121,26 +121,26 @@
   
   .navigation ul li:nth-child(1).active ~ .indicator {
     transform: translateX(calc(70px * 0));
-    left: 36px;
+    left: 2%;
   }
   
   .navigation ul li:nth-child(2).active ~ .indicator {
     transform: translateX(calc(70px * 1));
-    left: 50px;
+    left: 5%;
   }
   
   .navigation ul li:nth-child(3).active ~ .indicator {
     transform: translateX(calc(70px * 2));
-    left: 59px;
+    left: 8%;
   }
   
   .navigation ul li:nth-child(4).active ~ .indicator {
     transform: translateX(calc(80px * 3));
-    left: 75px;
+    left: 11%;
   }
   
   .navigation ul li:nth-child(5).active ~ .indicator {
     transform: translateX(calc(66px * 4));
-   left: 90px;
+   left: 13%;
   }
   
