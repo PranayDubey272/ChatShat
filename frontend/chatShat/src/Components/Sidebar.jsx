@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+ import React, { useState } from 'react'
 import Navigation from "./Navigation";
 import SearchIcon from '@mui/icons-material/Search';
 import { IconButton } from '@mui/material';
 import ChatArea from './ChatArea';
 import ConversationItem from './ConversationItem';
 import "./myStyles.css";
+import { useSelector } from 'react-redux';
+// import { useNavigate } from 'react-router-dom';
 
 function Sidebar() {
+
+  const lightTheme = useSelector((state) => state.themeKey);
 
   const [conversations,setConversation]=useState([
     {
@@ -26,15 +30,15 @@ function Sidebar() {
     },
   ]);
   return (
-    <div className='sidebar-container'>
+    <div className={"sidebar-container" + (lightTheme ? "" : " dark")}>
       
-      <div className="sb-search">
+      <div className={"sb-search" + (lightTheme ? "" : " dark")}>
         <IconButton>
         <SearchIcon/>
         </IconButton>
-        <input placeholder='search' className='search-box'/>
+        <input placeholder='search' className={'search-box' + (lightTheme ? "" : " dark")}/>
       </div>
-      <div className="sb-conversation">
+      <div className={"sb-conversation" + (lightTheme ? "" : " dark")}>
         {
           conversations.map((conversation)=>{
             return <ConversationItem props={conversation} key={conversation.name} />
