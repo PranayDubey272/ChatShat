@@ -2,7 +2,8 @@ import React from "react";
 import "./myStyles.css";
 import SearchIcon from "@mui/icons-material/Search";
 import { IconButton } from "@mui/material";
-import logo from "/logo.png";
+import lightLogo from "/logo.png";
+import darkLogo from "/logow.png";
 import { useSelector } from "react-redux";
 
 function Groups(){
@@ -11,7 +12,7 @@ function Groups(){
     return (
     <div className={"list-container" + (lightTheme ? "" : " dark")}>
         <div className={"ug-header" + (lightTheme ? "" : " dark")}>
-            <img src={logo} alt="logo" style={{height: "3rem",
+            <img src={lightTheme ? lightLogo : darkLogo} alt="logo" style={{height: "3rem",
             width: "5rem", marginLeft: "10px"}}/>
             <p className={"ug-title" + (lightTheme ? "" : " dark")}>Available Groups</p>
         </div>
