@@ -34,4 +34,32 @@ app.use("/message",messageRoutes);
 app.use(notfound);
 app.use(errorhandler);
 const PORT = process.env.PORT;
-app.listen(3000,console.log("listening on port 3000"));
+const server = app.listen(3000,console.log("listening on port 3000"));
+
+const io = require( "socket.io" )(server,{
+    cors:{
+        origin:"*",
+    },
+    pingTime: 60000
+});
+
+io.on("setup",(user)=>{
+    socket.join(user.data_id);
+    socket.emit("connected");
+
+socket.on("join chat",(room)=>{
+    socket.join(room);
+    // socket.emit("joined chat");
+})
+
+socket.on("new message",(newMessageStatus)=>{
+    var chat = newMessageStatus.chat;
+    if(!chat.users){
+        return console.log("chat.users not defined");
+    }
+    chat.users.forEach((user)=>{
+        if(user.id == newMessageStatus.sender._id) return;
+        socket.in(user._id).emit("message received",newMessageReceived);
+    });
+});
+});

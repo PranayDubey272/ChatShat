@@ -5,13 +5,13 @@ const User = require("../models/userModel");
 const accessChat = asyncHandler(async (req,res)=>{
     const {userId} = req.body;
     if(!userId){
-        console.error("User not found in the database");
+        console.error("UserId param not sent with request");
         res.status(400).send("User not found in the database");
     }
     var isChat  = await Chat.find({isGroupChat: false,
     $and:[
-        {users: {$eleMatch:{ $eq:req.user._id}}},
-        {users: {$eleMatch:{ $eq: userId}}},
+        {users: {$elemMatch:{ $eq:req.user._id}}},
+        {users: {$elemMatch:{ $eq: userId}}},
     ],
     }).populate("users","-password")
   .populate("latestMessage");
@@ -44,21 +44,12 @@ const accessChat = asyncHandler(async (req,res)=>{
   }
 
 });
-const fetchChats = asyncHandler(async (req,res)=>()=>{
+const fetchChats = asyncHandler(async (req,res)=>{
     try{
-      Chat.find({users: {$element :{$eq: req.user.id}}})
-      .populate("users","-password")
-      .populate("groupAdmin","-password")
-      .populate("latestMessage")
-      .sort({ updatedAt: -1 })
-      .then(async (results) =>{
-        results = await User.populate(results,{
-          path: "latestMessage.sender",
-          select: "name email",
-        });
-        res.status(200).send(results);
-      });
-    } catch(error){
+      const allChats = await Chat.where("users").equals(req.user._id);
+      res.status(200).send(allChats);
+    }
+    catch(error){
       res.status(400);
       throw new Error(error.message);
     }
@@ -77,7 +68,7 @@ const fetchGroups = asyncHandler(async (req,res)=>{
 
 const createGroupChat = asyncHandler(async (req,res)=>{
   if(!req.body.users || !req.body.name){
-    return res.status(400).send({messag:"data not found"});
+    return res.status(400).send({messag:"data is unsufficient"});
   }
   var users = JSON.parse(req.body.users);
   console.log("chatController/createGroups : ",req);
@@ -109,11 +100,17 @@ const groupExit = asyncHandler(async (req,res)=>{
 
   //login is yet to be made
   const removed = await Chat.findByIdAndUpdate(
-
+    chatId,
+    {
+      $pull: { users: userId },
+    },
+    {
+      new: true,
+    }
   ).populate("users", "-password")
   .populate("groupAdmin","-password");
   if(!removed){
-    res.status(400).send({message:"something went wrong"});
+    res.status(400).send({message:"Chat not found"});
   }
   else{
     res.json(removed);
