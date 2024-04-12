@@ -7,7 +7,7 @@ function MessageOthers() {
 
   var props1={name:"RandomUser",message:"This is a sample message"}
   return (
-    <div className={'other-message-container' + (lightTheme ? "" : " dark")}>
+    <div className={'other-message-container' + (lightTheme ? "" : " midDark")}>
       <div className={"conversations-container" + (lightTheme ? "" : " dark")}>
         <p className={'con-icon' + (lightTheme ? "" : " dark")}>{props1.name[0]}</p>
         <div className={"other-text-content" + (lightTheme ? "" : " dark")}>

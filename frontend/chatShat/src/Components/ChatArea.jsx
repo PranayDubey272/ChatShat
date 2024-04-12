@@ -48,7 +48,7 @@ function ChatArea() {
   ]);
   var props=conversations[0];
   return (
-    <div className={'chatArea-container' + (lightTheme ? "" : " dark")}>
+    <div className={'chatArea-container' + (lightTheme ? "" : " totalDark")}>
       <div className={"chatArea-header" + (lightTheme ? "" : " dark")}>
         <p className={"con-icon" + (lightTheme ? "" : " dark")}>{props.name[0]}</p>
         <div className={"header-text" + (lightTheme ? "" : " dark")}>
@@ -60,7 +60,7 @@ function ChatArea() {
           <CloseIcon className='close'/>
         </IconButton></div>
       </div>
-      <div className={"messages-container" + (lightTheme ? "" : " dark")}>
+      <div className={"messages-container" + (lightTheme ? "" : " midDark")}>
         <MessageOthers/>
         <MessageSelf/>
       </div>
