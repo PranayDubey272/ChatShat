@@ -10,7 +10,7 @@ function Groups(){
     const lightTheme = useSelector((state) => state.themeKey);
 
     return (
-    <div className={"list-container" + (lightTheme ? "" : " dark")}>
+    <div className={"list-container" + (lightTheme ? "" : " totalDark")}>
         <div className={"ug-header" + (lightTheme ? "" : " dark")}>
             <img src={lightTheme ? lightLogo : darkLogo} alt="logo" style={{height: "3rem",
             width: "5rem", marginLeft: "10px"}}/>
@@ -23,7 +23,7 @@ function Groups(){
             <input type="text" placeholder="Search" className={"search-box" + (lightTheme ? "" : " dark")} />
         </div>
 
-        <div className="ug-list">
+        <div className={"ug-list" + (lightTheme ? "" : " totalDark")}>
 
             <div className={"list-item" + (lightTheme ? "" : " dark")}>
                 <p className={"con-icon" + (lightTheme ? "" : " dark")}>T</p>
