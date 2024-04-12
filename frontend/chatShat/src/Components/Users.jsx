@@ -18,7 +18,7 @@ function Users(){
             <p className={"ug-title" + (lightTheme ? "" : " dark")}>Online Users</p>
         </div>
         <div className={"sb-search" + (lightTheme ? "" : " dark")}>
-            <IconButton>
+            <IconButton className={"" + (lightTheme ? "" : "dark")}>
                 <SearchIcon/>
             </IconButton>
             <input type="text" placeholder="Search" className={"search-box" + (lightTheme ? "" : " dark")} />

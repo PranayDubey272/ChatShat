@@ -6,6 +6,7 @@ import ChatArea from './ChatArea';
 import ConversationItem from './ConversationItem';
 import "./myStyles.css";
 import { useSelector } from 'react-redux';
+import { dark } from '@mui/material/styles/createPalette';
 // import { useNavigate } from 'react-router-dom';
 
 function Sidebar() {
@@ -33,7 +34,7 @@ function Sidebar() {
     <div className={"sidebar-container" + (lightTheme ? "" : " totalDark")}>
       
       <div className={"sb-search" + (lightTheme ? "" : " dark")}>
-        <IconButton>
+        <IconButton className={"" + (lightTheme ? "" : "dark")}>
         <SearchIcon/>
         </IconButton>
         <input placeholder='search' className={'search-box' + (lightTheme ? "" : " dark")}/>

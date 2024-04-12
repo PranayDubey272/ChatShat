@@ -10,7 +10,7 @@ function CreateGroups(){
     return (
         <div className={"creategroup-container" + (lightTheme ? "" : " dark")}>
             <input type="text" placeholder="Enter Group Name" className={"search-box" + (lightTheme ? "" : " dark")} />
-            <IconButton>
+            <IconButton className={"" + (lightTheme ? "" : "dark")}>
                 <DoneOutlineIcon />
             </IconButton>
         </div>);

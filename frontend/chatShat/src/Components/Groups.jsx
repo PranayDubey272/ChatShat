@@ -17,7 +17,7 @@ function Groups(){
             <p className={"ug-title" + (lightTheme ? "" : " dark")}>Available Groups</p>
         </div>
         <div className={"sb-search" + (lightTheme ? "" : " dark")}>
-            <IconButton>
+            <IconButton className={"" + (lightTheme ? "" : "dark")}>
                 <SearchIcon/>
             </IconButton>
             <input type="text" placeholder="Search" className={"search-box" + (lightTheme ? "" : " dark")} />

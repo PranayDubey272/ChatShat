@@ -56,7 +56,7 @@ function ChatArea() {
           <p className={'con-timeStamp' + (lightTheme ? "" : " dark")}>{props.timeStamp}</p>
         </div>
         <div style={{ marginLeft: 'auto' }}>
-        <IconButton>
+        <IconButton className={"" + (lightTheme ? "" : "dark")}>
           <CloseIcon className='close'/>
         </IconButton></div>
       </div>
@@ -65,7 +65,7 @@ function ChatArea() {
         <MessageSelf/>
       </div>
       <div className={"text-input-area" + (lightTheme ? "" : " dark")}>
-      <IconButton color="primary" component="label" htmlFor="fileInput">
+      <IconButton color="primary" component="label" htmlFor="fileInput" className={"" + (lightTheme ? "" : "dark")}>
         <AddIcon />
         <input
           type="file"
