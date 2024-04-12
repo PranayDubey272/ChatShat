@@ -30,7 +30,7 @@ function Sidebar() {
     },
   ]);
   return (
-    <div className={"sidebar-container" + (lightTheme ? "" : " dark")}>
+    <div className={"sidebar-container" + (lightTheme ? "" : " totalDark")}>
       
       <div className={"sb-search" + (lightTheme ? "" : " dark")}>
         <IconButton>
@@ -38,7 +38,7 @@ function Sidebar() {
         </IconButton>
         <input placeholder='search' className={'search-box' + (lightTheme ? "" : " dark")}/>
       </div>
-      <div className={"sb-conversation" + (lightTheme ? "" : " dark")}>
+      <div className={"sb-conversation" + (lightTheme ? "" : " midDark")}>
         {
           conversations.map((conversation)=>{
             return <ConversationItem props={conversation} key={conversation.name} />

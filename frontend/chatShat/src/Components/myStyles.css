@@ -1,6 +1,14 @@
 .dark{
-  background-color: #474d53 !important;
+  background-color: #5b6064 !important;
   color: whitesmoke !important;
+}
+
+.totalDark{
+  background-color: black;
+}
+
+.midDark{
+  background-color: #2c3238 !important;
 }
 
 .main-container{
