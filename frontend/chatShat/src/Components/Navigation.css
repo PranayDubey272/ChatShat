@@ -1,5 +1,5 @@
 .navigation {
-    margin-left: 7px;
+  margin-left: 7px;
     position: relative;
     max-width: 96%;
     height: 70px;
@@ -7,10 +7,27 @@
     display: flex;
     align-items: center;
     border-radius: 20px;
+    margin-bottom: 10px;
     border-top: 1px solid rgba(0, 0, 0, 0.14);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
-  
+  .navigation button{
+    background-color: transparent;
+  border: none;
+  color:var(--button-color);
+  font-size: 1rem;
+  bottom: -20PX;
+  }
+  .theme-toggle-button {
+    background-color: transparent !important; /* Set background color to transparent */
+  }
+  .navigation {
+    --button-color: #000000; /* Default color */
+  }
+  .navigation.dark {
+    --button-color:#ffffff;
+    background-color: none;
+  }
   .navigation ul {
     display: flex;
     width: 350px;
@@ -24,28 +41,28 @@
     width: 70px;
     height: 70px;
     z-index: 1;
-    margin-left: 45px;
+    margin-left: 38px;
   }
   
   .navigation ul li button {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
     
   }
   
   .icon {
+    cursor: pointer;
+    
     position: relative;
     display: block;
-    line-height: 75px;
     font-size: 1.5em;
     text-align: center;
-    height: 0;
     transition: transform 0.2s ease;
     color: var(--clr); /* Default icon color */
   }
@@ -55,12 +72,12 @@
   }
   
   .list.active {
-    transform: translateY(-57%);
+    transform: translateY(-47%);
   }
   
   .indicator {
     position: absolute;
-    top: -35px;
+    top: -28px;
     width: 60px;
     height: 60px;
     background: #222529;
@@ -104,12 +121,12 @@
   
   .navigation ul li:nth-child(1).active ~ .indicator {
     transform: translateX(calc(70px * 0));
-    left: 40px;
+    left: 36px;
   }
   
   .navigation ul li:nth-child(2).active ~ .indicator {
     transform: translateX(calc(70px * 1));
-    left: 48px;
+    left: 50px;
   }
   
   .navigation ul li:nth-child(3).active ~ .indicator {
@@ -119,11 +136,11 @@
   
   .navigation ul li:nth-child(4).active ~ .indicator {
     transform: translateX(calc(80px * 3));
-    left: 67px;
+    left: 75px;
   }
   
   .navigation ul li:nth-child(5).active ~ .indicator {
     transform: translateX(calc(66px * 4));
-   left: 78px;
+   left: 90px;
   }
   

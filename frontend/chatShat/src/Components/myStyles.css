@@ -38,7 +38,7 @@
   flex: 1;
   overflow: hidden;
   display: flex;
-  border-radius: 20px;
+  
 }
 .sidebar-container{
   flex: 0.3;
@@ -61,6 +61,7 @@
 .search-box{
   outline-width: 0;
   border: none;
+  width: 890px;
   margin-left: 10px;
   font-size: 1.25rem;
   color: rgba(0, 0, 0, 0.54);
