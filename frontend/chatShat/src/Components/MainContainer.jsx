@@ -18,7 +18,7 @@ function MainContainer(){
   <img src="/logow.png" alt="chat-icon" className="head-img"/>
   </div>
  </div>
- <div className={"mainwork-container" + (lightTheme ? "" : " dark")}>
+ <div className={"mainwork-container" + (lightTheme ? "" : " totalDark")}>
  <Sidebar/>
  <Outlet/>
  {/* <CreateGroup/> */}
