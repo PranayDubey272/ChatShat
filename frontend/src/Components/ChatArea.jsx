@@ -18,8 +18,10 @@ function ChatArea() {
   const [messageContent, setMessageContent] = useState("");
   const messagesEndRef = useRef(null);
   const dyParams = useParams();
+  console.log(dyParams);
+
   const [chat_id, chat_user] = dyParams._id.split("&");
-  // console.log(chat_id, chat_user);
+  console.log(chat_id, chat_user);
   const [socketConnectionStatus,setSocketConnectionStatus] = useState(false);
   const userData = JSON.parse(localStorage.getItem("userData"));
   const [allMessages, setAllMessages] = useState([]);
